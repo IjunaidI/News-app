@@ -1,2 +1,2 @@
 # News-app
-Open For all uit students if anybody want help
+Open For all Techkaro students if anybody want help
