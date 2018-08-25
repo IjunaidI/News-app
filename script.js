@@ -6,9 +6,9 @@ $.ajax({
            document.querySelector(".gen1").innerHTML += `
            <div class="latest-n1" style="background-image: url(${data.articles[i].urlToImage})">
            <div class="bg-dark">
-           <div class="name">IGN</div>
+           <div class="name">${data.articles[i].source.name}</div>
            <div class="title n1">${data.articles[i].title}</div>
-           <button class="info1">More Info</button>
+           <a href="${data.articles[i].url}"> <button class="info1">Read More</button></a>
        </div>       
        </div>`
        }
@@ -23,9 +23,9 @@ $.ajax({
            document.querySelector(".gen2").innerHTML += `
            <div class="latest-n1" style="background-image: url(${data.articles[i].urlToImage})">
            <div class="bg-dark">
-           <div class="name">IGN</div>
+           <div class="name">${data.articles[i].source.name}</div>
            <div class="title n1">${data.articles[i].title}</div>
-           <button class="info1">More Info</button>
+           <a href="${data.articles[i].url}"><button class="info1">Read More</button></a>
        </div>       
        </div>`
     }

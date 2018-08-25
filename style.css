@@ -74,19 +74,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     transition: transform .2s; 
   }
   .container > div:hover {
-    transform: scale(1.1); 
+    transform: scale(1.15); 
 }
 .name{
   background-color: #303031;
   border-radius: 20px;
-  padding-left: 40%;
+  text-align: center
 }
- 
-
-
-
-
-
   .container > div:nth-child(3n) {
     background-color: #88d8b0;
   }
@@ -101,3 +95,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   .container > div:nth-child(5n) {
     background-color: #ff8a5c;
   }
+  @media only screen and (max-width: 660px) {
+   img{
+     margin-left: auto;
+     margin-right: auto;
+      width: 500px;
+   }
+}
+@media only screen and (max-width: 470px) {
+  img{
+    margin-left: auto;
+    margin-right: auto;
+     width: 400px;}
+  .clock {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: #ecda22;
+      font-size: 50px;
+      font-family: 'Audiowide', cursive;
+      letter-spacing: 7px;
+    
+    
+    }
+  }
+}
+@media only screen and (max-width: 370px) {
+  img{
+    margin-left: auto;
+    margin-right: auto;
+     width: 300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  img{
+    margin-left: auto;
+    margin-right: auto;
+     width: 250px;
+  }
+}
