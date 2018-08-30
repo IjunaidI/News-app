@@ -2,7 +2,7 @@ $.ajax({
     url:`https://newsapi.org/v2/top-headlines?sources=polygon&apiKey=4ba4dbcdc43341919c99b02be806ba04`,
     success: function(data){
        for(i=0;i<6;i++){
-           console.log("lanat")
+           
            document.querySelector(".gen1").innerHTML += `
            <div class="latest-n1" style="background-image: url(${data.articles[i].urlToImage})">
            <div class="bg-dark">
@@ -19,7 +19,7 @@ $.ajax({
     url:`https://newsapi.org/v2/everything?sources=polygon&apiKey=4ba4dbcdc43341919c99b02be806ba04`,
     success: function(data){
         for(i=7;i<17;i++){
-           console.log("lanat")
+          
            document.querySelector(".gen2").innerHTML += `
            <div class="latest-n1" style="background-image: url(${data.articles[i].urlToImage})">
            <div class="bg-dark">
